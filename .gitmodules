@@ -1,0 +1,12 @@
+[submodule "ILU1/GL/LesGaulois"]
+	path = ILU1/GL/LesGaulois
+	url = https://github.com/lheintzmann1/LesGaulois.git
+[submodule "ILU1/GL/ilu1-gl-tp-semp25-lheintzmann1"]
+	path = ILU1/GL/ilu1-gl-tp-semp25-lheintzmann1
+	url = https://github.com/UPS-ILU/ilu1-gl-tp-semp25-lheintzmann1.git
+[submodule "ILU1/POO/PierreSabre"]
+	path = ILU1/POO/PierreSabre
+	url = https://github.com/lheintzmann1/PierreSabre.git
+[submodule "Projet/Projet.Aruba"]
+	path = Projet/Projet.Aruba
+	url = https://github.com/lheintzmann1/Projet.Aruba.git

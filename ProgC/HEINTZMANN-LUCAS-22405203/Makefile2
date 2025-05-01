@@ -1,0 +1,32 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+# Object files
+OBJ_TESTGENEA = identite.o genea.o testgenea.o
+
+# Default target
+all: testgenea
+
+# Link the object files to create the executable
+testgenea: $(OBJ_TESTGENEA)
+	$(CC) $(CFLAGS) -o $@ $^
+
+# Compile the source file identite.c
+identite.o: identite.c identite.h
+	$(CC) $(CFLAGS) -c $<
+
+# Compile the source file genea.c
+genea.o: genea.c genea.h identite.h
+	$(CC) $(CFLAGS) -c $<
+
+# Compile the source file testgenea.c
+testgenea.o: testgenea.c genea.h identite.h
+	$(CC) $(CFLAGS) -c $<
+
+# Clean the project
+clean:
+	rm -f *.o testgenea
+
+# Run the program with valgrind
+valgrind: testgenea
+	valgrind ./testgenea arbre4.ind arbre4.par

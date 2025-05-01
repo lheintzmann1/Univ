@@ -1,0 +1,5 @@
+# Ceci est l'algorithme pour calculer la somme de deux entiers saisis par l'utilisateur
+Saisir au clavier un premier entier (n1)
+Saisir au clavier un second entier (n2)
+somme <- n1 + n2
+Afficher la valeur de somme a l'ecran

@@ -1,0 +1,5 @@
+# Ceci est l'algorithme pour calculer le produit de deux entiers saisis par l'utilisateur
+Saisir au clavier un premier entier (n1)
+Saisir au clavier un second entier (n2)
+produit <- n1 * n2
+Afficher la valeur de la variable produit a l'ecran

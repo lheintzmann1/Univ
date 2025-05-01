@@ -1,0 +1,7 @@
+
+oui, car `ls` ne requière pas les droits superuser
+`exit` ferme la fenêtre de terminal T2, le T1 est toujours actif
+
+
+mkdir -p ARCHI SYSTEME/TP1/EXO1 SYSTEME/TP1/EXO2 SYSTEME/TP2 SYSTEME/TP3
+

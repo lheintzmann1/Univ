@@ -1,0 +1,30 @@
+# Makefile for Level 1
+
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+# Object files
+OBJ = identite.o testidentite.o
+
+# Default target
+all: testidentite
+
+# Link the object files to create the executable
+testidentite: $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^
+
+# Compile the source file identite.c
+identite.o: identite.c identite.h
+	$(CC) $(CFLAGS) -c $<
+
+# Compile the source file testidentite.c
+testidentite.o: testidentite.c identite.h
+	$(CC) $(CFLAGS) -c $<
+
+# Clean the project
+clean:
+	rm -f *.o testidentite
+
+# Run the program with valgrind
+valgrind: testidentite
+	valgrind ./testidentite

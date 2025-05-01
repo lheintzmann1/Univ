@@ -1,0 +1,3 @@
+Ceci est un
+fichier cache
+d'extension txt
