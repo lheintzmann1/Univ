@@ -1,5 +1,3 @@
-# Makefile for Level 1
-
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 
